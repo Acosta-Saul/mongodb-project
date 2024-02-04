@@ -14,10 +14,6 @@ use('CurriculumsVitae');
 
 
 
-
-
-
- 
 // 2. Consulta que muestra los documentos que tengan el atributo habilidades definido y atraves del forEach itera sobre todos los documentos para obtener al final la cantidad de herramientas por cada curriculum
 let i = 1;
 db.curriculums.find({habilidades: {$exists: true}},{habilidades: true}).forEach((doc) =>{
@@ -41,3 +37,14 @@ print("\n4. Curriculums con nivel 'Educacion Universitaria':");
 
 db.curriculums.find({"educacion.nivel": "Educación Universitaria"}).forEach(printjson);
 
+
+
+// 5. Mostrar aquellos curriculums con más de un título 
+// Valido si existe el atributo educacion, valido si existe el atributo titulo, si es ($gt significa >) mayor que 1 muestrame los documentos que cumplen con dicha condicion
+db.curriculums.find({
+  $and: [
+    { educacion: { $exists: true } },
+    { 'educacion.titulo': { $exists: true } },
+    { $expr: { $gt: [{ $size: '$educacion.titulo' }, 1] } }
+  ]
+})
