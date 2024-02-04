@@ -23,6 +23,17 @@ let i = 1;
 db.curriculums.find({habilidades: {$exists: true}},{habilidades: true}).forEach((doc) =>{
   console.log("Cantidad de habilidades: " + doc.habilidades.length + " [documento]: "+ i++);
   print("Habilidades:", doc.habilidades);
-})
+});
 
 
+
+
+ //3.	Mostrar la proyección de trabajos realizados (solo mostrar estos campos)
+ let y = 1;
+db.curriculums.find({"laboral.trabajos": { $exists: true }}, {"laboral.trabajos": 1}).forEach((doc) => {
+  print("Cantidad de trabajos:" + doc.laboral.trabajos.length + "[documento]:" + y++);
+  print("Trabajos:", doc.laboral.trabajos);
+}); 
+
+ 
+ 
