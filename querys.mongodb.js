@@ -36,4 +36,8 @@ db.curriculums.find({"laboral.trabajos": { $exists: true }}, {"laboral.trabajos"
 }); 
 
  
- 
+ // 4. Consulta que muestra los documentos que tengan el nivel "Educacion Universitaria"
+print("\n4. Curriculums con nivel 'Educacion Universitaria':");
+
+db.curriculums.find({"educacion.nivel": "Educación Universitaria"}).forEach(printjson);
+
