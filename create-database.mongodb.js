@@ -2,7 +2,7 @@
 // MongoDB Playground
 // Use Ctrl+Space inside a snippet or a string literal to trigger completions.
 const database = 'CurriculumsVitae';
-const collection = 'Curriculums';
+const collection = 'curriculums';
 // Create a new database.
 use(database);
 // Create a new collection.

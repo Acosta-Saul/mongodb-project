@@ -12,8 +12,9 @@ use(database);
       nombre: 'Mario',
 
       direccion:{
-        ciudad: 'Puerto Ordaz',
-        municipio: 'Caroní',
+        pais: 'Venezuela',
+        estado: 'Bolívar',
+        ciudad: 'Ciudad Guayana',
         residencia: 'Rio Aro'
       },
 
@@ -21,12 +22,16 @@ use(database);
       email: 'mario@example.com',
 
       redes:{
-        facebook: 'mario castaño',
-        instagram: 'MariCast',
+        facebook: 'Mario Castaño',
+        instagram: '@maricast',
       }
     },
 
-    educacion: 'Educación Universitaria',
+    educacion:{
+        nivel: 'Educación Universitaria',
+        titulo: ['informático', 'docente'],
+        institucion: ['UNEG', 'UDO']
+    },
 
     laboral: {
         pasantia: [
@@ -51,10 +56,10 @@ use(database);
                   ]
     },
 
-    habilidades: ['UML', 'JavaScript', 'MySQL', 'CSS', 'HTML', 'NodeJS', 'Python'],
+    habilidades: ['UML', 'JavaScript', 'MySQL', 'CSS', 'HTML', 'NodeJS', 'Python', 'Flutter', 'Dart'],
 
     intereses: ['Programación', 'Deporte', 'Música']
      
   }
 
-db.curriculums.find();
+db.curriculums.insertOne(curriculum1);
