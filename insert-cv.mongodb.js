@@ -301,7 +301,121 @@ use(database);
 };
 
 
+curriculum6 = {
+
+  resumen: 'Programador de videojuegos desde hace 10 años, profesional y serio, trabajo por proyectos.',
+
+  datos_personales: {
+    nombre: 'Kevin',
+    apellido: 'Pinto',
+
+    direccion:{
+      pais: 'Argentina',
+      region: 'Central',
+      ciudad: 'Cordoba',
+      residencia: 'Parra'
+    },
+
+    telefono: ['+546655321790'],
+    email: 'KevinPint@gmail.com',
+
+    redes:{
+      linkedin: 'linkedin.com/in/KevPintuo',
+      instagram: '@pintos',
+      facebook: 'Pinto Kevin'
+    }
+  },
+
+  educacion:{
+      nivel: 'Universitaria',
+      titulo: ['Game Developer'],
+      institucion: ['Universidad de Argentina']
+  },
+
+  laboral: {
+      pasantia: [
+
+                 { duracion: '4 meses',
+                   lugar: 'Empresa Cordev',
+                   cargo: 'Programador'},
+
+                ],
+
+      trabajos: [
+
+                 { modalidad: 'Tiempo completo',
+                   actividad: 'Desarrollo de videojuego pokemon',
+                   fecha: '14-06-2020'
+                 }
+
+                ]
+  },
+
+  habilidades: ['Python', 'C', 'Unity'],
+
+  intereses: ['Música', 'Programar', 'Estudiar']
+};
+
+/*
+const curriculumX = {
+  resumen: 'Desarrollador de videojuegos con más de 10 años de experiencia, dedicado y profesional. Especializado en proyectos de alta calidad.',
+
+  datos_personales: {
+    nombre: 'Luis',
+    apellido: 'García',
+
+    direccion:{
+      pais: 'México',
+      region: 'Occidental',
+      ciudad: 'Guadalajara',
+      residencia: 'Centro'
+    },
+
+    telefono: ['+521234567890'],
+    email: 'luis.garcia@email.com',
+
+    redes:{
+      linkedin: 'linkedin.com/in/LuisGarcia',
+      instagram: '@luisgarcia_dev',
+      facebook: 'Luis Garcia'
+    }
+  },
+
+  educacion:{
+      nivel: 'Posgrado',
+      titulo: ['Desarrollo de Videojuegos Avanzado'],
+      institucion: ['Universidad Tecnológica de Guadalajara']
+  },
+
+  laboral: {
+      pasantia: [
+
+                 { duracion: '6 meses',
+                   lugar: 'Empresa GameDev Solutions',
+                   cargo: 'Desarrollador Senior'},
+
+                ],
+
+      trabajos: [
+
+                 { modalidad: 'Freelance',
+                   actividad: 'Desarrollo de simulador de vuelo',
+                   fecha: '01-09-2022'
+                 }
+
+                ]
+  },
+
+  habilidades: ['JavaScript', 'C++', 'Unreal Engine'],
+
+  intereses: ['Realidad Virtual', 'Inteligencia Artificial', 'Música']
+};
+
+*/
 
 
 
-db.curriculums.insertOne(curriculum1);
+
+
+
+db.curriculums.insertOne(curriculumX);

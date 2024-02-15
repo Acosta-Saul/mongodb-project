@@ -17,33 +17,31 @@ use('CurriculumsVitae');
 
 //-------------------------------------------------------------------------------------------------
 
-/*
 // 2. Consulta que muestra los documentos que tengan el atributo habilidades definido y a traves 
 // del forEach itera sobre todos los documentos para obtener al final la cantidad de herramientas
 // por cada curriculum
-let i = 1;
-db.curriculums.find({habilidades: {$exists: true}},{habilidades: true, datos_personales:true}).forEach((doc) =>{
-  print('[curriculum]:' + i++);
-  print("Nombre y apellido: " + doc.datos_personales.nombre + " "+ doc.datos_personales.apellido);
-  console.log("Cantidad de habilidades: " + doc.habilidades.length);
-  print("Habilidades:", doc.habilidades);
+// let i = 1;
+// db.curriculums.find({habilidades: {$exists: true}},{habilidades: true, datos_personales:true}).forEach((doc) =>{
+//   print('[curriculum]:' + i++);
+//   print("Nombre y apellido: " + doc.datos_personales.nombre + " "+ doc.datos_personales.apellido);
+//   console.log("Cantidad de habilidades: " + doc.habilidades.length);
+//   print("Habilidades:", doc.habilidades);
 
-});
-*/
+// });
+
 
 //-------------------------------------------------------------------------------------------------
-/*
 
- //3.	Mostrar la proyección de trabajos realizados (solo mostrar estos campos)
- let y = 1;
- 
-db.curriculums.find({"laboral.trabajos": { $exists: true }}, {"laboral.trabajos": 1, datos_personales: true}).forEach((doc) => {
-  print('[curriculum]:' + y++);
-  print("Nombre y apellido: " + doc.datos_personales.nombre + " "+ doc.datos_personales.apellido);
-  print("Cantidad de trabajos:" + doc.laboral.trabajos.length);
-  print("Trabajos:", doc.laboral.trabajos);
-}); 
-*/
+
+//  //3.	Mostrar la proyección de trabajos realizados (solo mostrar estos campos)
+//  let y = 1;
+// db.curriculums.find({"laboral.trabajos": { $exists: true }}, {"laboral.trabajos": 1, datos_personales: true}).forEach((doc) => {
+//   print('[curriculum]:' + y++);
+//   print("Nombre y apellido: " + doc.datos_personales.nombre + " "+ doc.datos_personales.apellido);
+//   print("Cantidad de trabajos:" + doc.laboral.trabajos.length);
+//   print("Trabajos:", doc.laboral.trabajos);
+// }); 
+
 
 
 //-------------------------------------------------------------------------------------------------
